@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 pipeline {
-    agent any
+    agent { dockerfile true }
     stages {
         stage('Build') {
             steps {
