@@ -9,9 +9,9 @@ public class ToDoListApp {
         Scanner sc = new Scanner(System.in);
         boolean running = true;
 
-        printMenu();
+        
         while (running) {
-
+            printMenu();
             try {
                 String command = sc.nextLine();
 
@@ -31,7 +31,7 @@ public class ToDoListApp {
                     default:
                         System.out.println("Invalid command. Please try again.");
                 }
-                printMenu();
+
             }catch (Exception e) {
 
             }
