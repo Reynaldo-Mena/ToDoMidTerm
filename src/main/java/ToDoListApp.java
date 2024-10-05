@@ -33,10 +33,10 @@ public class ToDoListApp {
     }
 
     private static void printMenu() {
-        System.out.println("To-Do List Application");
-        System.out.println("1. Add a to-do item");
-        System.out.println("2. Delete a to-do item");
-        System.out.println("3. View to-do items");
+        System.out.println("To-Do List Application ");
+        System.out.println("1. Add a to-do item ");
+        System.out.println("2. Delete a to-do item ");
+        System.out.println("3. View to-do items ");
         System.out.println("4. Exit");
         System.out.print("Enter your choice: ");
     }
@@ -45,7 +45,7 @@ public class ToDoListApp {
         System.out.print("Enter the description of the to-do item: ");
         String description = scanner.nextLine();
         todoList.addItem(description);
-        System.out.println("Item added successfully.");
+        System.out.println("Item added successfully. ");
     }
 
     private static void deleteItem(Scanner scanner) {
