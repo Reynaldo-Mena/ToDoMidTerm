@@ -5,7 +5,7 @@ pipeline {
         stage('Maven Build') {
             steps {
                  bat 'mvn clean install'
-                  bat 'docker build -t Rey/Todolist .'
+                  bat 'docker build -t rey/todolist .'
             }
         }
    }
