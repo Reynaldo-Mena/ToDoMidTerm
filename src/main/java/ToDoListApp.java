@@ -49,14 +49,14 @@ public class ToDoListApp {
     }
 
     private static void deleteItem(Scanner scanner) {
-        System.out.print("Enter the index of the item to delete: ");
+        System.out.print("Enter the index of the item to delete:  ");
         int index = Integer.parseInt(scanner.nextLine());
         todoList.deleteItem(index);
-        System.out.println("Item deleted successfully.");
+        System.out.println("Item deleted successfully. ");
     }
 
     private static void viewItems() {
-        System.out.println("To Do Items:");
+        System.out.println("To Do Items: ");
         int index = 0;
         for (Items item : todoList.getItems()) {
             System.out.println(index + ": " + item);
