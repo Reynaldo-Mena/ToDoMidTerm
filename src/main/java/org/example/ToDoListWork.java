@@ -18,7 +18,7 @@ public class ToDoListWork {
         if (index >= 0 && index < items.size()) {
             items.remove(index);
         } else {
-            System.out.println("Invalid index. Please try again.");
+            System.out.println("Invalid index. Please try again.  ");
         }
     }
 
