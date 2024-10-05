@@ -11,26 +11,29 @@ public class ToDoListApp {
 
         while (running) {
             printMenu();
-            String command = sc.nextLine();
+            try {
+                String command = sc.nextLine();
 
-            switch (command) {
-                case "1":
-                    addItem(sc);
-                    break;
-                case "2":
-                    deleteItem(sc);
-                    break;
-                case "3":
-                    viewItems();
-                    break;
-                case "4":
-                    running = false;
-                    break;
-                default:
-                    System.out.println("Invalid command. Please try again.");
+                switch (command) {
+                    case "1":
+                        addItem(sc);
+                        break;
+                    case "2":
+                        deleteItem(sc);
+                        break;
+                    case "3":
+                        viewItems();
+                        break;
+                    case "4":
+                        running = false;
+                        break;
+                    default:
+                        System.out.println("Invalid command. Please try again.");
+                }
+            }catch (Exception e) {
+                System.out.println("Invalid command. Please try again.");
             }
         }
-
         sc.close();
     }
 
@@ -39,7 +42,7 @@ public class ToDoListApp {
         System.out.println("1. Add a to-do item ");
         System.out.println("2. Delete a to-do item ");
         System.out.println("3. View to-do items ");
-        System.out.println("4. Exit bruh");
+        System.out.println("4. Exit ");
         System.out.print("Enter your choice: ");
     }
 
