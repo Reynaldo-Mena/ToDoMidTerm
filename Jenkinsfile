@@ -10,7 +10,6 @@ pipeline {
         stage('Docker Build & Push') {
             steps {
                 bat 'docker build -t angry_ptolemy .'
-                bat 'docker run 989c863d4e71'
                }
               }
    }

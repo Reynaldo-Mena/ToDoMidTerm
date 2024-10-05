@@ -39,7 +39,7 @@ public class ToDoListApp {
         System.out.println("1. Add a to-do item ");
         System.out.println("2. Delete a to-do item ");
         System.out.println("3. View to-do items ");
-        System.out.println("4. Exit");
+        System.out.println("4. Exit bruh");
         System.out.print("Enter your choice: ");
     }
 
