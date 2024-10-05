@@ -11,5 +11,6 @@ pipeline {
             steps {
                 bat 'docker build -t angry_ptolemy .'
                }
+              }
    }
 }
