@@ -2,19 +2,14 @@
 pipeline {
     agent any
     stages {
-        stage('Maven Install') {
-            agent {
-               dockerfile true
-                   }
+        stage('Maven Build') {
             steps {
                  bat 'mvn clean install'
             }
         }
-        stage('Docker Build') {
-            agent any
+        stage('Docker Build & Push') {
             steps {
-                bat 'docker build -t s'
-                }
+                bat 'docker build -t angry_ptolemy .'
                }
    }
 }
