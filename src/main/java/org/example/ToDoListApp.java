@@ -33,7 +33,7 @@ public class ToDoListApp {
                 }
                 printMenu();
             }catch (Exception e) {
-                System.out.println("Invalid command. Please try again.");
+
             }
         }
         sc.close();
