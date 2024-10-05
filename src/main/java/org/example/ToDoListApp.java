@@ -12,7 +12,7 @@ public class ToDoListApp {
         
         while (running) {
             printMenu();
-            try {
+            
                 String command = sc.nextLine();
 
                 switch (command) {
@@ -32,9 +32,9 @@ public class ToDoListApp {
                         System.out.println("Invalid command. Please try again.");
                 }
 
-            }catch (Exception e) {
 
-            }
+
+
         }
         sc.close();
     }
