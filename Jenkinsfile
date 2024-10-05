@@ -5,12 +5,8 @@ pipeline {
         stage('Maven Build') {
             steps {
                  bat 'mvn clean install'
+                  bat 'docker build -t Rey/Todolist .'
             }
         }
-        stage('Docker Build & Push') {
-            steps {
-                bat 'docker build -t angry_ptolemy .'
-               }
-              }
    }
 }
