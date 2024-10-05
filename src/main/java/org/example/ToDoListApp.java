@@ -1,3 +1,5 @@
+package org.example;
+
 import java.util.Scanner;
 
 public class ToDoListApp {
@@ -56,7 +58,7 @@ public class ToDoListApp {
     }
 
     private static void viewItems() {
-        System.out.println("To Do Items: ");
+        System.out.println("To Do org.example.Items: ");
         int index = 0;
         for (Items item : todoList.getItems()) {
             System.out.println(index + ": " + item);

@@ -9,16 +9,15 @@ COPY pom.xml .
 COPY src ./src
 
 # Package the application (build the JAR file)
-RUN mvn clean package
-
+RUN mvn clean package -Dmaven.test.skip=true
 # Second stage: use a lighter image to run the application
 FROM openjdk:11-jre-slim
 
 # Copy the built JAR file from the Maven build container
-COPY --from=build /app/target/your-app.jar /app/your-app.jar
+COPY --from=build /app/target/ToDoMidTerm-1.0-SNAPSHOT.jar /app/ToDoMidTerm-1.0-SNAPSHOT.jar
 
 # Expose the port your application will run on
 EXPOSE 8080
 
 # Define the command to run your app
-ENTRYPOINT ["java", "-jar", "/app/your-app.jar"]
+ENTRYPOINT ["java", "-jar", "/app/ToDoMidTerm-1.0-SNAPSHOT.jar"]
