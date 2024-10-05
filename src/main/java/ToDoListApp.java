@@ -56,7 +56,7 @@ public class ToDoListApp {
     }
 
     private static void viewItems() {
-        System.out.println("To-Do Items:");
+        System.out.println("To Do Items:");
         int index = 0;
         for (Items item : todoList.getItems()) {
             System.out.println(index + ": " + item);
