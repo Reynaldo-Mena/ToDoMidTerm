@@ -6,7 +6,6 @@ WORKDIR /app
 
 # Copy the Maven build file (pom.xml) and the source code
 COPY pom.xml .
-
 COPY src ./src
 
 # Package the application (build the JAR file)
