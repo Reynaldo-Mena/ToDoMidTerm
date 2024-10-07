@@ -29,7 +29,7 @@ public class ToDoListApp {
                         running = false;
                         break;
                     default:
-                        System.out.println("Invalid command.  Please try again.");
+                        System.out.println("Invalid command. Please try again. ");
                 }printMenu();
 
             }catch (Exception e) {
