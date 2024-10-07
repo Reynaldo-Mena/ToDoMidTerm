@@ -39,7 +39,9 @@ public class ToDoListApp {
         sc.close();
     }
 
+
     private static void printMenu() {
+        
         System.out.println("To-Do List Application ");
         System.out.println("1. Add a to-do item ");
         System.out.println("2. Delete a to-do item ");
