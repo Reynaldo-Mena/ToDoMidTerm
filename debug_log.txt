@@ -1,0 +1,3 @@
+Script started with action: deploy and environment: staging 
+Script started with action: deploy and environment: staging 
+Script started with action: deploy and environment: staging 

@@ -1,11 +1,17 @@
 package org.example;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.util.Scanner;
 
 public class ToDoListApp {
+    private static final Logger logger = LogManager.getLogger(ToDoListApp.class);
+
     private static ToDoListWork todoList = new ToDoListWork();
 
     public static void main(String[] args) {
+        logger.info("Application started.");
+
         Scanner sc = new Scanner(System.in);
         boolean running = true;
 
@@ -13,21 +19,26 @@ public class ToDoListApp {
         while (running) {
 
             try {
+
                 String command = sc.nextLine();
 
                 switch (command) {
                     case "1":
                         addItem(sc);
                         break;
+
                     case "2":
                         deleteItem(sc);
                         break;
+
                     case "3":
                         viewItems();
                         break;
+
                     case "4":
                         running = false;
                         break;
+
                     default:
                         System.out.println("Invalid command.  Please try again. ");
                 }printMenu();
@@ -37,6 +48,7 @@ public class ToDoListApp {
             }
         }
         sc.close();
+        logger.info("Application stopped.");
     }
 
 
